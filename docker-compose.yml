@@ -1,0 +1,39 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  # Backend service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - OLLAMA_URL=http://47.177.58.4:45721
+      - OLLAMA_MODEL=llama2  # Default model
+      - USE_OLLAMA=true
+      - SEARXNG_URL=http://47.177.58.4:9090  # Your specific SearXNG URL
+      - USE_SEARXNG=true
+      - FALLBACK_TO_STATIC=true
+    volumes:
+      - ./backend:/app
+    restart: unless-stopped
+    networks:
+      - analogy-network
+  
+  # Frontend service
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - analogy-network
+
+networks:
+  analogy-network:
+    driver: bridge
