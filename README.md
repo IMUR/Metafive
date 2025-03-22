@@ -40,7 +40,7 @@ The application consists of three main components:
 - Node.js 16+ and npm (for frontend development)
 - Python 3.8+ (for backend development)
 - Access to Ollama instance (running at 47.177.58.4:45721)
-- Access to SearXNG instance (running at 192.168.254.181:9090)
+- Access to SearXNG instance (running at 47.177.58.4:9090)
 
 ## Project Structure
 

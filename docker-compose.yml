@@ -11,7 +11,7 @@ services:
       - "8000:8000"
     environment:
       - OLLAMA_URL=http://47.177.58.4:45721
-      - OLLAMA_MODEL=llama2  # Default model
+      - OLLAMA_MODEL=openchat:latest  # Default model
       - USE_OLLAMA=true
       - SEARXNG_URL=http://47.177.58.4:9090  # Your specific SearXNG URL
       - USE_SEARXNG=true
