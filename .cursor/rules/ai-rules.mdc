@@ -1,0 +1,61 @@
+---
+description: ensuring proper interaction with user
+globs: 
+alwaysApply: false
+---
+# Cursor AI Coding Rules
+
+## Core Principles
+
+- Always implement the simplest possible solution
+- Maintain code cleanliness and organization
+- Focus solely on the requested changes
+- Use established patterns unless explicitly directed otherwise
+
+## Code Quality Standards
+
+- Maximum file length: 200-300 lines
+- No code duplication
+- No stubbing or mock data in dev/prod environments
+- No modification of .env files
+- Write thorough tests for all major functionality
+- Prefer end-to-end testing
+- Fix failing tests while ensuring changes don't impact other environments
+
+## Development Workflow
+
+- Make small, focused changes
+- Commit after each change
+- Test frequently
+- Stay within the scope of the request
+- Consider impacts on related code areas
+- Use existing implementations before introducing new patterns
+- Remove old implementations when replacing them
+
+## File Management
+
+- Avoid creating new files/scripts unless necessary
+- Delete temporary test scripts after use
+- Keep related functionality grouped together
+
+## Technology Guidelines
+
+- Use popular, well-established technology stacks
+- Maintain separate databases for dev/test/prod
+- Use proper databases (no JSON file storage)
+- Follow the project's specified technical stack
+
+## Change Management
+
+- Only make well-understood changes
+- Don't modify unrelated code
+- Preserve working architectural patterns unless instructed
+- Exhaust existing implementation options before introducing new ones
+- Remove deprecated code after implementing replacements
+
+## Testing Requirements
+
+- Write comprehensive tests for new functionality
+- Maintain existing test coverage
+- Fix failing tests promptly
+- Ensure test fixes don't compromise other environments
