@@ -1,8 +1,8 @@
-# Software Analogy Tool
+# Metafive
 
 ## Overview
 
-The Software Analogy Tool is an interactive learning application that helps users leverage their existing knowledge in one software domain to learn another through analogies. By mapping familiar concepts from software you know to corresponding features in software you want to learn, the tool accelerates the learning curve through contextual understanding.
+The Metafive is an interactive learning application that helps users leverage their existing knowledge in one software domain to learn another through analogies. By mapping familiar concepts from software you know to corresponding features in software you want to learn, the tool accelerates the learning curve through contextual understanding.
 
 ## Key Features
 
@@ -71,8 +71,8 @@ software-analogy-tool/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/software-analogy-tool.git
-   cd software-analogy-tool
+   git clone https://github.com/IMUR/Metafive.git
+   cd Metafive
    ```
 
 2. Configure external services in `docker-compose.yml`:
